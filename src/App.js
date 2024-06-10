@@ -32,7 +32,7 @@ function App() {
   }
 
   useEffect(() => {
-    const socket = new WebSocket('ws://localhost:8080/community/testaa'); // 백엔드 WebSocket 주소
+    const socket = new WebSocket('ws://43.202.24.20:8080/community/testaa'); // 백엔드 WebSocket 주소
     socketObj.current = socket;
     socket.onopen = () => {
       console.log('WebSocket connected');
